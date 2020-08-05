@@ -1,4 +1,4 @@
-The app is a php site running on randallwebvm.
+The app is a php site living on randallwebvm.  It seems inactivated.
 
 It's git linked from there to our gitlab.
 
