@@ -1,11 +1,12 @@
-The app is a php site living on randallwebvm.  It seems inactivated.
+The app is an html static site from randallwebvm.
 
-It's git linked from there to our gitlab.
+It has lived at libary.uncw.edu/web/montford.  Since randallwebvm is begin decommissioned, this app is in a container reverse proxied from library.uncw.edu
 
-You can run a dev box on your machine with `docker-compose up`, and push the changes to gitlab & pull to the randallwebvm.
+You can run a dev box on your machine with `docker-compose up`, and push the changes to gitlab & rancher.
 
-It's also possible to run the app in Rancher.
+## Rancher production
 
-There do not appear to be any hard links that break from dockerizing.
-
-tutorial.php IS the entrypoint to this app, there is no index.html or index.php.
+```
+docker build -t libapps-admin.uncw.edu:8000/randall-dev/montford --platform linux/x86_64/v8 .
+docker push libapps-admin.uncw.edu:8000/randall-dev/montford
+```
